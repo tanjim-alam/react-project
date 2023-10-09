@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2021/08/netflix-series-peliculas-streaming-2426541.jpg?tf=3840x");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: white;
+}
+
+#box {
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 4px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
