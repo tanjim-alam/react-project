@@ -1,0 +1,117 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navHome {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#box1 {
+    width: 80%;
+    height: 6vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    font-size: 35px;
+    color: darkorange;
+}
+
+#searchBox {
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+}
+
+#search {
+    width: 400px;
+    padding: 10px 2px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    outline: none;
+
+}
+
+#searchBtn {
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#userMainBox {
+    display: flex;
+    gap: 20px;
+}
+
+#cartBox {
+    background-color: darkorange;
+    padding: 5px 7px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+#userBox {
+    display: flex;
+    gap: 10px;
+}
+
+#userBox button {
+    background-color: darkorange;
+    color: white;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 7px;
+    cursor: pointer;
+}
+
+#box2 {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    background-color: darkorange;
+}
+
+#navbar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#navbar ul {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+#navbar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#navbar ul li a {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+}

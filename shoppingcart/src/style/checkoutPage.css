@@ -1,0 +1,58 @@
+#mainBox {
+    width: 100%;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+#productBox {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#billingBox {
+    width: 30%;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#billingBox div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#billingBox div p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#billingBox div span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#billingBox div .additional {
+    color: rgb(3, 190, 3);
+}
+
+#billingBox button {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    background-color: darkorange;
+    color: white;
+    font-size: 17px;
+}
