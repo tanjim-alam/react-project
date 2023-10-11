@@ -4,8 +4,10 @@
 
 #container {
     width: 80%;
+    min-height: 80vh;
     margin: auto;
     display: flex;
+    border: 1px solid red;
     gap: 20px;
 }
 

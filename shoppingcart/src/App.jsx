@@ -6,6 +6,7 @@ import Slider from "./components/Slider";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import CheckoutPage from "./pages/CheckoutPage";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   // const [data, setData] = useState([
@@ -45,6 +46,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/checkout" element={<CheckoutPage />} />
+      <Route path="/product/:id" element={<ProductPage />} />
     </Routes>
   )
 }

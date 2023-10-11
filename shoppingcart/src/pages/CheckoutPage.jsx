@@ -3,6 +3,7 @@ import MyContext from "../context/ShoppingContext"
 import AddedItemCard from "../components/AddedItemCard"
 import "../style/checkoutPage.css"
 import HomeLayout from "../components/HomeLayout"
+import ProductSlider from "../components/ProductSlider"
 
 function CheckoutPage() {
     const { cartData, cartLength, totalAmount, setCartData } = useContext(MyContext)
@@ -76,6 +77,7 @@ function CheckoutPage() {
                         <button>Place Order</button>
                     </div>
                 </div>
+                <ProductSlider />
             </div>
         </HomeLayout>
     )

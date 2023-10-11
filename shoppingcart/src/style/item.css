@@ -9,6 +9,7 @@
     box-shadow: 0px 0px 4px gray;
     /* background-color: aqua; */
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #itemBox img {

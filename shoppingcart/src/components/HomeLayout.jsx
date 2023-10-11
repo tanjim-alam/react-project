@@ -1,9 +1,10 @@
 import { useContext } from "react"
 import "../style/homeLayout.css"
 import MyContext from "../context/ShoppingContext"
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 function HomeLayout({ children }) {
     const { cartLength } = useContext(MyContext);
+    const navigate = useNavigate()
     return (
         <div>
             <div id="navHome">
@@ -18,15 +19,16 @@ function HomeLayout({ children }) {
 
                     <div id="userMainBox">
                         <div id="cartBox">
-                            {cartLength < 1 ?
-                                (
+                            <div onClick={() => {
+                                if (cartLength > 0) {
+                                    navigate("/checkout")
+                                }
+                                else {
                                     alert("Your cart is empty")
-                                ) : (<NavLink to="/checkout">
-                                    <p id="cart">Cart: <span>{cartLength}</span></p>
-                                </NavLink>
-                                )
-
-                            }
+                                }
+                            }}>
+                                <p id="cart">Cart: <span>{cartLength}</span></p>
+                            </div>
                         </div>
                         <div id="userBox">
                             <button>Login</button>
